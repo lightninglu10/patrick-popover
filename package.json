@@ -1,0 +1,152 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "react-popover",
+        "scope": null,
+        "escapedName": "react-popover",
+        "name": "react-popover",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/patricklu/Q5/safesign/safesign-web"
+    ]
+  ],
+  "_from": "react-popover@latest",
+  "_id": "react-popover@0.4.8",
+  "_inCache": true,
+  "_location": "/react-popover",
+  "_nodeVersion": "6.9.1",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/react-popover-0.4.8.tgz_1490756833920_0.44419841817580163"
+  },
+  "_npmUser": {
+    "name": "jasonkuhrt",
+    "email": "jasonkuhrt@me.com"
+  },
+  "_npmVersion": "3.10.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "react-popover",
+    "scope": null,
+    "escapedName": "react-popover",
+    "name": "react-popover",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-popover/-/react-popover-0.4.8.tgz",
+  "_shasum": "1025c51d01d770cf8b3594b8e5e839757a91b576",
+  "_shrinkwrap": null,
+  "_spec": "react-popover",
+  "_where": "/Users/patricklu/Q5/safesign/safesign-web",
+  "author": {
+    "name": "Jason Kuhrt",
+    "email": "jasonkuhrt@me.com",
+    "url": "http://jasonkuhrt.com/"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react",
+      "stage-1"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/littlebits/react-popover/issues"
+  },
+  "dependencies": {
+    "babel-jest": "^19.0.0",
+    "css-vendor": "^0.3.1",
+    "debug": "^2.1.3",
+    "lodash.throttle": "^3.0.3"
+  },
+  "description": "A specification backed popover for react",
+  "devDependencies": {
+    "babel-cli": "^6.3.15",
+    "babel-core": "^6.3.15",
+    "babel-eslint": "^7.1.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-1": "^6.3.13",
+    "bluebird": "^3.0.5",
+    "bootstrap-webpack-plugin": "^0.3.0",
+    "chai": "^3.2.0",
+    "classnames": "^2.2.1",
+    "css-loader": "^0.17.0",
+    "cssnext-loader": "^1.0.1",
+    "eslint": "^3.17.1",
+    "eslint-config-littlebits": "^0.6.2",
+    "jest": "^19.0.2",
+    "jest-cli": "^19.0.2",
+    "ramda": "^0.18.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-draggable": "^1.1.1",
+    "react-hot-loader": "^1.2.4",
+    "react-tappable": "^0.7.1",
+    "react-test-renderer": "^15.4.2",
+    "release": "^1.1.7",
+    "style-loader": "^0.12.3",
+    "webpack": "^1.12.1",
+    "webpack-dev-server": "^1.10.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "1025c51d01d770cf8b3594b8e5e839757a91b576",
+    "tarball": "https://registry.npmjs.org/react-popover/-/react-popover-0.4.8.tgz"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "littlebits"
+    ],
+    "env": {
+      "jest": true
+    }
+  },
+  "gitHead": "7a6e20dc9cf9ad96c090e00c20575240bd37fe16",
+  "homepage": "https://github.com/littlebits/react-popover",
+  "license": "MIT",
+  "main": "build/index.js",
+  "maintainers": [
+    {
+      "name": "jasonkuhrt",
+      "email": "jasonkuhrt@me.com"
+    },
+    {
+      "name": "sch",
+      "email": "schaedles@gmail.com"
+    },
+    {
+      "name": "stresslimit",
+      "email": "colin@littlebits.cc"
+    }
+  ],
+  "name": "react-popover",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/littlebits/react-popover.git"
+  },
+  "scripts": {
+    "build": "npm run clean && babel --out-dir build lib",
+    "build-examples": "npm run clean && webpack",
+    "clean": "rm -rf build",
+    "deploy-demos": "git checkout gh-pages && git merge master --no-edit && npm run build-examples && git add -A && git commit -m 'Update demos' && git push && git checkout master",
+    "dev": "npm start",
+    "postversion": "npm run build && git push && git push --tags && npm publish && release",
+    "start": "webpack-dev-server --hot",
+    "test": "jest",
+    "test-dev": "jest --watch"
+  },
+  "version": "0.4.8"
+}
